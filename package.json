@@ -1,0 +1,41 @@
+{
+  "name": "simpleTCPserver",
+  "version": "0.0.1",
+  "main": "simpleTCPserver",
+  "description": "A simple tcp net socket client for use with simpleTCPserver.",
+  "keywords": [
+    "net","tcp","client"
+  ],
+  "author": {
+    "name": "Sam Caldwell",
+    "email": "mail@samcaldwell.net",
+    "url": "http://github.com/x684867/simpleTCPserver"
+  }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/x684867/simpleTCPserver.git"
+  },
+  "directories": {
+    "tests": "tests"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "gypfile": true,
+  "readme": "No readme at this time."
+  "readmeFilename": "readme.txt",
+  "bugs": {
+    "url": "http://github.com/x684867/simpleTCPserver/issues"
+  },
+  "_id": "http://github.com/x684867/simpleTCPserver@0.0.1",
+  "dist": {
+    "shasum": ""
+  },
+  "_from": "simpleTCPserver@",
+  "_resolved": "https://registry.npmjs.org/base64/-/simpleTCPserver-0.0.1.tgz"
+}
