@@ -51,8 +51,15 @@ module.exports=function(){
 		server.on('connection',function(){boolHasConnection=true;});
 		server.on('close',function(){boolHasConnection=false;});
 
-		server.listen(port,addr,function(){console.log('server [id:'+currServers.length-1+'] is listening.');});
-
+		server.start=function(){
+			if(isListening)
+				console.log("server is already listening");
+			else
+				server.listen(port,addr,function(){
+					console.log('server [id:'+currServers.length-1+'] is listening.');
+				});
+		}
+		
 		server.send=function(m){wBuff.push(base64encode(m));}
 		server.read=function(){if(rBuff.length>0) return base64decode(rBuff.shift());}
 		
